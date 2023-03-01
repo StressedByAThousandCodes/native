@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View, TextInput, Alert } from 'react-native';
+import { Button, StyleSheet, Text, View, TextInput, Alert, Image } from 'react-native';
 import { useState } from 'react';
 
 export default function App() {
@@ -31,6 +31,10 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <Image 
+        source={require('./assets/Facebook-logo.png')} 
+        style={styles.picture}
+      />
       <Text>Log In</Text>
       <View>
         <TextInput 
@@ -75,5 +79,9 @@ const styles = StyleSheet.create({
     width: 200,
     padding: 10,
     margin: 10,
+  },
+  picture:{
+    width: 100,
+    height:100,
   }
 });
