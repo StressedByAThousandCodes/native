@@ -57,6 +57,7 @@ export default function App() {
           title='Submit'
           onPress={printInputs}
         />
+        <Text></Text>
         <Button 
           title='Clear'
           onPress={clear}
