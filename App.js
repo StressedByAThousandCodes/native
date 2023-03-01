@@ -53,6 +53,7 @@ export default function App() {
           secureTextEntry = {true}
         />
         <Text>{displayText}</Text>
+        <Text></Text>
         <Button 
           title='Submit'
           onPress={printInputs}
