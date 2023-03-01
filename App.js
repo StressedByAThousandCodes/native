@@ -16,6 +16,7 @@ export default function App() {
       setDisplayText(`Email: ${email}\nPassword: ${password}`);
     }
   }
+  
   const isValidEmail = (email) => {
     // regular expression for email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
