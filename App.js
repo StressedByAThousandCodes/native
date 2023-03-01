@@ -52,11 +52,11 @@ export default function App() {
           value={password}
           secureTextEntry = {true}
         />
+        <Text>{displayText}</Text>
         <Button 
           title='Submit'
           onPress={printInputs}
         />
-        <Text>{displayText}</Text>
         <Button 
           title='Clear'
           onPress={clear}
