@@ -13,7 +13,9 @@ export default function App() {
     if (!isValidEmail(email)) {
       Alert.alert('Invalid Email', 'Please enter a valid email address.');
     } else {
-      setDisplayText(`Email: ${email}\nPassword: ${password}`);
+      {setDisplayText(`Email: ${email}\nPassword: ${password}`);}
+      {setEmail('')}
+      {setPassword('')}
     }
   }
   
@@ -83,5 +85,6 @@ const styles = StyleSheet.create({
   picture:{
     width: 100,
     height:100,
+    
   }
 });
